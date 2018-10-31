@@ -15,8 +15,8 @@
 ![table](../resource/table.png)
 
 ### 解：首先求数据集 D 的经验熵 H(D)
-### ![](http://latex.codecogs.com/gif.latex?\begin{equation} \begin{split}  H(D)&=-\sum_{i}^{n}p_{i=1}log_{2}p_{i} \\ &=-(\frac{9}{15}log_{2}\frac{9}{15}+\frac{6}{15}log_{2}\frac{6}{15}) \\ &=-0.971 \end{split} \end{equation})
-### 然后求各个特征对数据集 D 的经验条件熵 H(D|A)。分别以$A,B,C,E $ 表示年龄、是否有工作、是否有自己的房子，信贷情况4个特征，则 $$ \begin{equation} \begin{split}  H(D|A) &=\sum_{i=1}^{n}p_{i}H(Y|A=A_{i}) \\ &=\frac{5}{15}H(Y|A=A_{1})+\frac{5}{15}H(Y|A=A_{2})+\frac{5}{15}H(Y|A=A_{3}) \\ &=\frac{5}{15}[(-\frac{3}{5}log_{2}\frac{3}{5}-\frac{2}{5}log_{2}\frac{2}{5})+(-\frac{2}{5}log_{2}\frac{2}{5}-\frac{3}{5}log_{2}\frac{3}{5})+(-\frac{4}{5}log_{2}\frac{4}{5}-\frac{1}{5}log_{2}\frac{1}{5})] \\ &=-0.888 \end{split} \end{equation}$$ 
+### ![](../resource/entropy2.png)
+### 然后求各个特征对数据集 D 的经验条件熵 H(D|A)。分别以$A,B,C,E $ 表示年龄、是否有工作、是否有自己的房子，信贷情况4个特征，则 ![](../resouce/entropy3.png)
 
 ### 依次求出其他特征的条件熵 $$H(D|B)=0.647 $$ $$H(D|C)=0.551 $$ $$H(D|E)=0.608 $$ <br>最后求各个特征的信息增益 $g(D|A)=H(D)-H(D|A)$ <br>所以有  
 $$ g(D|A)=0.083 $$ $$g(D|B)=0.324 $$ $$g(D|C)=0.420 $$ $$g(D|E)=0.363 $$ 
