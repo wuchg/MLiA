@@ -20,5 +20,8 @@
 ![](../resource/entropy3.png)
 
 ### 依次求出其他特征的条件熵 ![](http://latex.codecogs.com/gif.latex?H(D|B)=0.647 ) ![](http://latex.codecogs.com/gif.latex?H(D|C)=0.551 ) ![](http://latex.codecogs.com/gif.latex?H(D|E)=0.608 ) <br>最后求各个特征的信息增益 ![](http://latex.codecogs.com/gif.latex?g(D|A)=H(D)-H(D|A)) <br>所以有  
-![](http://latex.codecogs.com/gif.latex? g(D|A)=0.083 ) ![](http://latex.codecogs.com/gif.latex?g(D|B)=0.324 ) ![](http://latex.codecogs.com/gif.latex?g(D|C)=0.420 ) ![](http://latex.codecogs.com/gif.latex?g(D|E)=0.363 )
+![](http://latex.codecogs.com/gif.latex?g(D|A)=0.083 ) <br> 
+![](http://latex.codecogs.com/gif.latex?g(D|B)=0.324 ) <br>
+![](http://latex.codecogs.com/gif.latex?g(D|C)=0.420 ) <br>
+![](http://latex.codecogs.com/gif.latex?g(D|E)=0.363 )
 ### 故特征C，即有自己的房子作为最优特征。
